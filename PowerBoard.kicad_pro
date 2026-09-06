@@ -60,9 +60,9 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.25,
-          "min_island_area": 10.0,
-          "min_thickness": 0.15,
+          "min_clearance": 0.3,
+          "min_island_area": 0.0013161349,
+          "min_thickness": 0.2,
           "pad_connection": 2,
           "remove_islands": 1,
           "thermal_relief_gap": 0.5,
@@ -243,6 +243,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -675,7 +679,7 @@
         "uuid": "4968e1a4-684e-4e00-8962-5a7d0208cb1b"
       }
     ],
-    "used_designators": "C22,C29,Q1,D2-5,#PWR24-42,R6,R8,R15-20,U5,U8-9",
+    "used_designators": "C22,C29,Q1,D2-5,#PWR24-43,R6,R8,R15-20,U5,U8-13",
     "variants": []
   },
   "sheets": [

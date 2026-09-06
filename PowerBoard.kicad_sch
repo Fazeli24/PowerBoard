@@ -5,7 +5,7 @@
 	(uuid "4968e1a4-684e-4e00-8962-5a7d0208cb1b")
 	(paper "A4")
 	(title_block
-		(title "PowerBoard")
+		(title "Neutron PowerBoard")
 		(rev "1")
 	)
 	(lib_symbols
@@ -3048,6 +3048,119 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "powerBoardSchool:M2_Screw"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "powerBoardSchool:Unbenannt"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "M2_Screw_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "M2_Screw_1_1"
+				(rectangle
+					(start -5.08 2.54)
+					(end 2.54 -2.54)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "M2"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 210.82 118.11)
@@ -3278,6 +3391,12 @@
 		(uuid "02595764-852f-4cfb-911f-2f16f41f579f")
 	)
 	(junction
+		(at 158.75 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0288ae91-15bf-4b69-b8b0-f6e1ba0e4c07")
+	)
+	(junction
 		(at 40.64 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3342,6 +3461,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "372c67fc-e4b4-472d-8ea6-c1544a862517")
+	)
+	(junction
+		(at 158.75 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a031852-679a-4299-a889-ac91aefcdc8d")
 	)
 	(junction
 		(at 109.22 110.49)
@@ -3422,7 +3547,7 @@
 		(uuid "5f07c992-96be-4cb7-8ea1-f3e856aee546")
 	)
 	(junction
-		(at 142.24 180.34)
+		(at 134.62 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "61e7a789-f7e3-4d5c-9e90-18701d609624")
@@ -3582,6 +3707,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cca85bfc-1547-4709-b622-79dc11662d8c")
+	)
+	(junction
+		(at 158.75 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cdd3a5be-6923-47e0-8c17-5dbe06f59ca4")
 	)
 	(junction
 		(at 62.23 27.94)
@@ -3759,6 +3890,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 175.26) (xy 158.75 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "180063db-6c5d-4482-b66e-af13e8dd867d")
+	)
+	(wire
+		(pts
 			(xy 91.44 175.26) (xy 91.44 184.15)
 		)
 		(stroke
@@ -3819,7 +3960,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 172.72) (xy 142.24 172.72)
+			(xy 124.46 172.72) (xy 134.62 172.72)
 		)
 		(stroke
 			(width 0)
@@ -4399,7 +4540,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 177.8) (xy 142.24 180.34)
+			(xy 134.62 177.8) (xy 134.62 180.34)
 		)
 		(stroke
 			(width 0)
@@ -4569,6 +4710,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 181.61) (xy 158.75 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84e027ee-a193-4d37-8b1d-161cafece32d")
+	)
+	(wire
+		(pts
 			(xy 267.97 125.73) (xy 267.97 130.81)
 		)
 		(stroke
@@ -4639,6 +4790,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 168.91) (xy 158.75 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93d850c6-7e95-416b-8495-cc9dd1c3d274")
+	)
+	(wire
+		(pts
 			(xy 91.44 152.4) (xy 91.44 149.86)
 		)
 		(stroke
@@ -4646,6 +4807,16 @@
 			(type default)
 		)
 		(uuid "9489ff87-abf4-4f24-af47-b2cd3d9fd8f3")
+	)
+	(wire
+		(pts
+			(xy 158.75 187.96) (xy 158.75 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96f5e06b-ca5c-47a5-b1b7-05e26fe18c4c")
 	)
 	(wire
 		(pts
@@ -4759,7 +4930,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 175.26) (xy 142.24 175.26)
+			(xy 124.46 175.26) (xy 134.62 175.26)
 		)
 		(stroke
 			(width 0)
@@ -5099,7 +5270,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 180.34) (xy 142.24 182.88)
+			(xy 134.62 180.34) (xy 134.62 182.88)
 		)
 		(stroke
 			(width 0)
@@ -5458,7 +5629,7 @@
 		(uuid "1b224b97-a344-47b7-9950-747ec56d6d40")
 	)
 	(label "PGOOD_6V"
-		(at 132.08 172.72 0)
+		(at 124.46 172.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5468,7 +5639,7 @@
 		(uuid "2d4dad16-6bee-4fe2-8e9f-eb5c7d6ef47d")
 	)
 	(label "PGOOD_5V"
-		(at 132.08 175.26 0)
+		(at 124.46 175.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8106,7 +8277,7 @@
 	)
 	(symbol
 		(lib_id "powerBoardSchool:4x1_Header_Male")
-		(at 148.59 176.53 0)
+		(at 140.97 176.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8117,7 +8288,7 @@
 		(fields_autoplaced yes)
 		(uuid "4db90b12-f43b-4734-a53c-f0b32479c9d9")
 		(property "Reference" "U9"
-			(at 153.67 176.5299 0)
+			(at 146.05 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8128,7 +8299,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 148.59 176.53 0)
+			(at 140.97 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8138,7 +8309,7 @@
 			)
 		)
 		(property "Footprint" "PowerBoard:4x1_2.54mmPitch"
-			(at 148.59 176.53 0)
+			(at 140.97 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8149,7 +8320,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 176.53 0)
+			(at 140.97 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8160,7 +8331,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 148.59 176.53 0)
+			(at 140.97 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9221,6 +9392,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 158.75 189.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a82d11d-beda-4ec8-a79b-1d95d4e4e241")
+		(property "Reference" "#PWR043"
+			(at 158.75 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a39f2fa-11ec-4797-8495-ba741d9ef1e6")
+		)
+		(instances
+			(project "PowerBoard"
+				(path "/4968e1a4-684e-4e00-8962-5a7d0208cb1b"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 267.97 140.97 0)
 		(unit 1)
@@ -9379,6 +9628,84 @@
 			(project "PowerBoard"
 				(path "/4968e1a4-684e-4e00-8962-5a7d0208cb1b"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "powerBoardSchool:M2_Screw")
+		(at 166.37 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "723b6110-4eb2-4b8a-8a7c-fa284fef06e7")
+		(property "Reference" "U11"
+			(at 170.18 175.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 166.37 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "powerBoardSchool:Unbenannt"
+			(at 166.37 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9032163d-d56b-4060-8fe4-bf798e0ba6f6")
+		)
+		(instances
+			(project "PowerBoard"
+				(path "/4968e1a4-684e-4e00-8962-5a7d0208cb1b"
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -12814,8 +13141,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 142.24 182.88 0)
+		(lib_id "powerBoardSchool:M2_Screw")
+		(at 166.37 187.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12824,10 +13151,20 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c9db69c8-9e69-41ab-bd3f-468c78f378e8")
-		(property "Reference" "#PWR042"
-			(at 142.24 189.23 0)
-			(hide yes)
+		(uuid "c65b906a-d3cf-4e64-9609-76071885544a")
+		(property "Reference" "U13"
+			(at 170.18 187.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 166.37 187.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12836,18 +13173,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 142.24 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 182.88 0)
+		(property "Footprint" "powerBoardSchool:Unbenannt"
+			(at 166.37 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12858,7 +13185,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 182.88 0)
+			(at 166.37 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ecb13ffa-7847-4d85-aeb2-4891bbb7b9ee")
+		)
+		(instances
+			(project "PowerBoard"
+				(path "/4968e1a4-684e-4e00-8962-5a7d0208cb1b"
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 134.62 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9db69c8-9e69-41ab-bd3f-468c78f378e8")
+		(property "Reference" "#PWR042"
+			(at 134.62 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12869,7 +13274,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 182.88 0)
+			(at 134.62 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13413,6 +13818,84 @@
 		)
 	)
 	(symbol
+		(lib_id "powerBoardSchool:M2_Screw")
+		(at 166.37 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d76e5d33-2450-469a-8bf1-db496dad5d9d")
+		(property "Reference" "U12"
+			(at 170.18 181.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 166.37 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "powerBoardSchool:Unbenannt"
+			(at 166.37 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2da8d069-ce47-432b-ba03-3c396ae0eacb")
+		)
+		(instances
+			(project "PowerBoard"
+				(path "/4968e1a4-684e-4e00-8962-5a7d0208cb1b"
+					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 146.05 54.61 0)
 		(mirror y)
@@ -13733,6 +14216,84 @@
 		)
 	)
 	(symbol
+		(lib_id "powerBoardSchool:M2_Screw")
+		(at 166.37 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7c30710-2883-4eb0-856c-5014f1b5beb2")
+		(property "Reference" "U10"
+			(at 170.18 168.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 166.37 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "powerBoardSchool:Unbenannt"
+			(at 166.37 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "93a80efb-c596-4ca3-a1f5-35e88b51f6ab")
+		)
+		(instances
+			(project "PowerBoard"
+				(path "/4968e1a4-684e-4e00-8962-5a7d0208cb1b"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 134.62 54.61 0)
 		(mirror y)
@@ -14007,7 +14568,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 254 121.92 0)
 			(hide yes)
 			(show_name no)
