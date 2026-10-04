@@ -7070,7 +7070,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "33.2k"
 			(at 41.91 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
